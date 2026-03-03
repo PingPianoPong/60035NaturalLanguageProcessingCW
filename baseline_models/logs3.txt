@@ -7,7 +7,7 @@ INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/FacebookAI/robert
 INFO:httpx:HTTP Request: HEAD https://huggingface.co/FacebookAI/roberta-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
 INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/FacebookAI/roberta-base/e2da8e2f811d1448a5b465c236feacd80ffbac7b/config.json "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: HEAD https://huggingface.co/FacebookAI/roberta-base/resolve/main/model.safetensors "HTTP/1.1 302 Found"
-Loading weights: 100%|██████████| 197/197 [00:00<00:00, 877.76it/s, Materializing param=roberta.encoder.layer.11.output.dense.weight]              
+Loading weights: 100%|██████████| 197/197 [00:00<00:00, 1534.75it/s, Materializing param=roberta.encoder.layer.11.output.dense.weight]              
 RobertaForSequenceClassification LOAD REPORT from: FacebookAI/roberta-base
 Key                             | Status     | 
 --------------------------------+------------+-
@@ -40,13 +40,13 @@ completed batch 120
 completed batch 130
 Evaluation finished!
 
-[[1645  248]
- [  41  158]]
+[[1683  210]
+ [  42  157]]
               precision    recall  f1-score   support
 
-           0       0.98      0.87      0.92      1893
-           1       0.39      0.79      0.52       199
+           0       0.98      0.89      0.93      1893
+           1       0.43      0.79      0.55       199
 
-    accuracy                           0.86      2092
-   macro avg       0.68      0.83      0.72      2092
-weighted avg       0.92      0.86      0.88      2092
+    accuracy                           0.88      2092
+   macro avg       0.70      0.84      0.74      2092
+weighted avg       0.92      0.88      0.89      2092
